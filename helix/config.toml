@@ -1,0 +1,41 @@
+theme = "gruvbox_dark_hard"
+
+[editor]
+mouse = true
+auto-format = true
+auto-save = true
+color-modes = true
+completion-trigger-len = 1
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+newline = "all"
+
+[editor.whitespace.characters]
+newline = "⏎"
+
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "position-percentage", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
